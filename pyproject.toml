@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "jike-roast"
+version = "0.1.0"
+description = ""
+authors = ["zhangcheng <zh.milo@gmail.com>"]
+readme = "README.md"
+
+[[tool.poetry.source]]
+name = "tsinghua-pypi"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = 'primary'
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0.3"
+flask-socketio = "^5.3.6"
+requests = "^2.32.3"
+beautifulsoup4 = "^4.12.3"
+openai = "^1.40.8"
+gunicorn = "^23.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
